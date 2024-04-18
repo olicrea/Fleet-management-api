@@ -2,6 +2,8 @@
 
 ## Stack de tecnologías
 
+* [TypeScript](https://hackernoon.com/how-to-setup-a-nodejs-app-with-express-and-typescript):
+  como lenguaje de tipado estatico.
 * [Express](https://expressjs.com/en/starter/hello-world.html):
   como librería para implementar un servidor HTTP.
 * [Prisma](https://www.prisma.io/): cómo
