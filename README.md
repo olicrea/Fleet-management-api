@@ -10,6 +10,7 @@
 * [6. Stack de tecnologías](#6-stack-de-tecnologías)
 * [7. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
 * [8. Funcionalidades opcionales](#8-funcionalidades-opcionales)
+* [9. Comprender para implementar](#9-comprender-para-implementar)
 
 ***
 
@@ -875,3 +876,35 @@ _código HTTP_ 200 en formato json gracias al _header_
 
 Si completaste todas las funcionalidades del proyecto te invitamos a trabajar en
 las [funcionalides opcionales](./docs/extension.md)
+
+## 9. Comprender para implementar
+
+### Construyendo la arquitectura de la API: FLEET MANAGEMENT SOFTWARE
+
+| Check | Etapa | Resultado |
+|-------|-------|-----------|
+| [ ] | Dispositivos GPS en taxis <br>(coordenadas geográficas) | Archivos SQL |
+| [ ] | PGADMIN | Se carga base de datos y se crean tablas: <br> - Tabla de taxis con data de taxis y trayectorias <br> - Tabla de trayectorias |
+| [ ] | Vercel PostgreSQL | Base de datos en la nube |
+| [ ] | Consultas SQL | Prisma: como ORM para consultas a la db con métodos <br> para operaciones CRUD, no comandos SQL directamente|
+| [ ] | Se programa API REST | - Express <br> - TypeScript <br> - Superagent: como framework de pruebas e2e <br> - ts-jest: para pruebas unitarias |
+| [ ] | Documentación en Swagger | Cada endpoint: <br> - Método HTTP <br> - URL <br> - Parámetros <br> - Encabezados <br> - Códigos HTTP de respuesta <br> - Cuerpo |
+| [ ] | CLIENTE obtiene su aplicación | [ ] Endpoint 1: id y placa para cada taxi <br> [ ] Endpoint 2: ubicaciones de un taxi por ID y fecha <br> [ ] Endpoint 3: última ubicación reportada por cada taxi <br> - Paginación de resultados para facilitar manejo |
+
+
+
+### Entendimiento de conceptos y requerimientos necesarios
+
+- **IoT**, o Internet de las cosas (en inglés, Internet of Things), se refiere a la interconexión digital de dispositivos y objetos cotidianos a través de Internet. Estos dispositivos pueden ser desde electrodomésticos, vehículos, dispositivos portátiles, hasta sensores y componentes industriales. La idea es que estos dispositivos puedan recopilar y transmitir datos automáticamente, permitiendo la creación de sistemas más inteligentes y automatizados. IoT permite la conexión de objetos físicos al mundo digital, creando oportunidades para la eficiencia, comodidad y nuevas aplicaciones tecnológicas.
+
+- El **Fleet Management Software** (Software de Gestión de Flotas) es una solución tecnológica diseñada para ayudar a las empresas a administrar y supervisar eficientemente sus flotas de vehículos. Este tipo de software proporciona una amplia gama de funciones y características que permiten a los administradores de flotas realizar tareas como seguimiento de vehículos en tiempo real, gestión de mantenimiento, programación de rutas, monitoreo de conductores, gestión de combustible, análisis de datos y generación de informes, entre otras.
+
+- Los **archivos SQL** son archivos de texto que contienen comandos en lenguaje SQL (Structured Query Language). SQL es un lenguaje estándar utilizado para interactuar con bases de datos relacionales. Los archivos SQL pueden contener una variedad de comandos SQL, como instrucciones de creación de tablas, inserción de datos, actualización de datos, eliminación de datos y consultas.
+
+- En un **modelo de base de datos relacional**, los datos se organizan y almacenan en tablas que están relacionadas entre sí mediante claves o campos comunes. Estas relaciones entre las tablas permiten que los datos se consulten y se recuperen de manera eficiente, así como también garantizan la integridad y consistencia de los datos.
+
+- **Prisma** es un ORM (Object-Relational Mapping) que permite interactuar con la base de datos utilizando un modelo de datos de alto nivel en lugar de escribir consultas SQL directamente. En lugar de trabajar con comandos SQL, los desarrolladores pueden definir modelos de datos en código utilizando Prisma, lo que simplifica y abstrae la interacción con la base de datos. Por ejemplo, en lugar de escribir una consulta SQL para seleccionar todos los registros de una tabla, se puede utilizar el método de consulta de Prisma para lograr lo mismo de manera más abstracta y legible en código.
+  
+- El tipo de **datos "SERIAL" en PostgreSQL** es una forma de definir un campo numérico que se incrementa automáticamente con cada inserción de fila en la tabla. Cuando se inserta una nueva fila en la tabla, el valor del campo "id" se asigna automáticamente y se incrementa en uno respecto al valor de la fila anterior. Esto es útil porque evita la necesidad de que el usuario especifique manualmente el valor del "id" al insertar nuevas filas en la tabla "trajectories". Simplifica el proceso de inserción de datos y garantiza que cada fila tenga un identificador único y consecutivo.
+
+
