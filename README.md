@@ -892,15 +892,12 @@ las [funcionalides opcionales](./docs/extension.md)
 | [ ] | Programación de Consultas SQL | Prisma: como ORM para consultas a la db con métodos <br>para operaciones CRUD, no comandos SQL directamente <br>con paginación|
 | [ ] | Documentación en Swagger | Cada endpoint: <br> - Método HTTP <br> - URL <br> - Parámetros <br> - Encabezados <br> - Códigos HTTP de respuesta <br> - Cuerpo |
 
+### Checklist backlog
 | | **Endpoints** | **Requisitos** | 
 |-------|-------|-----------|
 | [ ] |Endpoint 1| Id y placa para cada taxi|
 | [ ] |Endpoint 2| Ubicaciones de un taxi por ID y fecha |
 | [ ] |Endpoint 3| Última ubicación reportada por cada taxi |
-
-
-
-
 
 ### Entendimiento de conceptos y requerimientos necesarios
 
