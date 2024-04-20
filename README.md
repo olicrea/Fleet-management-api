@@ -881,15 +881,24 @@ las [funcionalides opcionales](./docs/extension.md)
 
 ### Construyendo la arquitectura de la API: FLEET MANAGEMENT SOFTWARE
 
-| Check | Etapa | Resultado |
+| | **Etapa** | **Resultado** |
 |-------|-------|-----------|
+| **Para todas las historias** |
 | [ ] | Dispositivos GPS en taxis <br>(coordenadas geográficas) | Archivos SQL |
 | [ ] | PGADMIN | Se carga base de datos y se crean tablas: <br> - Tabla de taxis con data de taxis y trayectorias <br> - Tabla de trayectorias |
 | [ ] | Vercel PostgreSQL | Base de datos en la nube |
-| [ ] | Consultas SQL | Prisma: como ORM para consultas a la db con métodos <br> para operaciones CRUD, no comandos SQL directamente|
-| [ ] | Se programa API REST | - Express <br> - TypeScript <br> - Superagent: como framework de pruebas e2e <br> - ts-jest: para pruebas unitarias |
+| **Para cada historia** |
+| [ ] | Programación base de API REST | - Express <br> - TypeScript <br> - Superagent: como framework de pruebas e2e <br> - ts-jest: para pruebas unitarias |
+| [ ] | Programación de Consultas SQL | Prisma: como ORM para consultas a la db con métodos <br>para operaciones CRUD, no comandos SQL directamente <br>con paginación|
 | [ ] | Documentación en Swagger | Cada endpoint: <br> - Método HTTP <br> - URL <br> - Parámetros <br> - Encabezados <br> - Códigos HTTP de respuesta <br> - Cuerpo |
-| [ ] | CLIENTE obtiene su aplicación | [ ] Endpoint 1: id y placa para cada taxi <br> [ ] Endpoint 2: ubicaciones de un taxi por ID y fecha <br> [ ] Endpoint 3: última ubicación reportada por cada taxi <br> - Paginación de resultados para facilitar manejo |
+
+| | **Endpoints** | **Requisitos** | 
+|-------|-------|-----------|
+| [ ] |Endpoint 1| Id y placa para cada taxi|
+| [ ] |Endpoint 2| Ubicaciones de un taxi por ID y fecha |
+| [ ] |Endpoint 3| Última ubicación reportada por cada taxi |
+
+
 
 
 
