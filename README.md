@@ -913,4 +913,7 @@ las [funcionalides opcionales](./docs/extension.md)
   
 - El tipo de **datos "SERIAL" en PostgreSQL** es una forma de definir un campo numérico que se incrementa automáticamente con cada inserción de fila en la tabla. Cuando se inserta una nueva fila en la tabla, el valor del campo "id" se asigna automáticamente y se incrementa en uno respecto al valor de la fila anterior. Esto es útil porque evita la necesidad de que el usuario especifique manualmente el valor del "id" al insertar nuevas filas en la tabla "trajectories". Simplifica el proceso de inserción de datos y garantiza que cada fila tenga un identificador único y consecutivo.
 
+### Recursos esenciales para el proyecto
+[ x ]  https://hackernoon.com/how-to-setup-a-nodejs-app-with-express-and-typescript
+
 
