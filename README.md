@@ -884,12 +884,13 @@ las [funcionalides opcionales](./docs/extension.md)
 | | **Etapa** | **Resultado** |
 |-------|-------|-----------|
 | **Para todas las historias** |
-| [ ] | Dispositivos GPS en taxis <br>(coordenadas geográficas) | Archivos SQL |
-| [ ] | PGADMIN | Se carga base de datos y se crean tablas: <br> - Tabla de taxis con data de taxis y trayectorias <br> - Tabla de trayectorias |
-| [ ] | Vercel PostgreSQL | Base de datos en la nube |
+| [x] | Dispositivos GPS en taxis <br>(coordenadas geográficas) | Archivos SQL |
+| [x] | PGADMIN | Se carga base de datos y se crean tablas: <br> - Tabla de taxis con data de taxis y trayectorias <br> - Tabla de trayectorias |
+| [x] | Vercel PostgreSQL | Base de datos en la nube |
 | **Para cada historia** |
-| [ ] | Programación base de API REST | - Express <br> - TypeScript <br> - Superagent: como framework de pruebas e2e <br> - ts-jest: para pruebas unitarias |
-| [ ] | Programación de Consultas SQL | Prisma: como ORM para consultas a la db con métodos <br>para operaciones CRUD, no comandos SQL directamente <br>con paginación|
+| [x] | Programación base de API REST | - Express <br> - TypeScript <br> |
+| [ ] | Tests | Superagent: como framework de pruebas e2e <br> - ts-jest: para pruebas unitarias |
+| [ ] | Programación de Consultas SQL | Prisma: como ORM para consultas a la db con métodos para operaciones CRUD, no comandos SQL directamente (con paginación)|
 | [ ] | Documentación en Swagger | Cada endpoint: <br> - Método HTTP <br> - URL <br> - Parámetros <br> - Encabezados <br> - Códigos HTTP de respuesta <br> - Cuerpo |
 
 ### Checklist backlog
@@ -914,6 +915,19 @@ las [funcionalides opcionales](./docs/extension.md)
 - El tipo de **datos "SERIAL" en PostgreSQL** es una forma de definir un campo numérico que se incrementa automáticamente con cada inserción de fila en la tabla. Cuando se inserta una nueva fila en la tabla, el valor del campo "id" se asigna automáticamente y se incrementa en uno respecto al valor de la fila anterior. Esto es útil porque evita la necesidad de que el usuario especifique manualmente el valor del "id" al insertar nuevas filas en la tabla "trajectories". Simplifica el proceso de inserción de datos y garantiza que cada fila tenga un identificador único y consecutivo.
 
 ### Recursos esenciales para el proyecto
-[ x ]  https://hackernoon.com/how-to-setup-a-nodejs-app-with-express-and-typescript
 
+- [ x ]  [Configurar una aplicación NodeJS con Express y TypeScript.](https://hackernoon.com/how-to-setup-a-nodejs-app-with-express-and-typescript)
 
+- [ x ]  [Configuración para empezar a usar: Vercel Postgres y pgAdmin-lectura.](https://drive.google.com/file/d/1X60AvNWVKUYPd2_e1Wus7Mpldng5AQSU/view)
+
+- [ x ] [Entendiendo el editor online de swagger-video.](https://www.youtube.com/watch?v=SdsaZ-t1QwA)
+
+- [ x ] [Exportar el archivo swagger de la API-lectura.](https://apidog.com/blog/how-to-export-swagger-api-document/)
+
+- [ x ] [Empezar a usar Prisma-video.](https://youtu.be/N5dkg28jRF0?si=6tof1h-CmhTf9Ey5)
+
+- [ x ] [Empezar a usar Prisma-lectura.](https://blog.logrocket.com/prisma-orm-adoption-guide/)
+
+- [ x ] [API CRUD REST con Node.js, Express y PostgreSQL.](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/)
+
+- [ x ] [Documentación de Prisma sobre models.](https://www.prisma.io/docs/orm/prisma-schema/data-model/models)
