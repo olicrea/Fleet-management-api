@@ -885,12 +885,12 @@ las [funcionalides opcionales](./docs/extension.md)
 |-------|-------|-----------|
 | **Para todas las historias** |
 | [x] | Dispositivos GPS en taxis <br>(coordenadas geográficas) | Archivos SQL |
-| [x] | PGADMIN | Se carga base de datos y se crean tablas: <br> - Tabla de taxis con data de taxis y trayectorias <br> - Tabla de trayectorias |
-| [x] | Vercel PostgreSQL | Base de datos en la nube |
-| **Para cada historia** |
+| [x] | Vercel PostgreSQL | Campo para base de datos en la nube |
+| [x] | PRISMA + PGADMIN | Se crean tablas y se cargan datos: <br> - Tabla de taxis con data de taxis y trayectorias <br> - Tabla de trayectorias |
 | [x] | Programación base de API REST | - Express <br> - TypeScript <br> |
+| **Para cada historia** |
+| [ ] | Programación de Consultas SQL | Prisma: como ORM para consultas a la db con métodos para operaciones CRUD, no comandos SQL directamente <br>(con paginación)|
 | [ ] | Tests | Superagent: como framework de pruebas e2e <br> - ts-jest: para pruebas unitarias |
-| [ ] | Programación de Consultas SQL | Prisma: como ORM para consultas a la db con métodos para operaciones CRUD, no comandos SQL directamente (con paginación)|
 | [ ] | Documentación en Swagger | Cada endpoint: <br> - Método HTTP <br> - URL <br> - Parámetros <br> - Encabezados <br> - Códigos HTTP de respuesta <br> - Cuerpo |
 
 ### Checklist backlog
