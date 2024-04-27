@@ -1,10 +1,37 @@
-## <1.0.0> - <2024-03-27>
+## <1.1.0> - <2024-04-30>
 
 ### Sprint learnings
-- Configurar el inicio de una aplicación NodeJS con Express y TypeScript
+- Sobre métodos de prisma
+- Sobre paginación en prisma
+- La importancia de prisma client para hacer las consultas a la base de datos
+- Establecer relación entre tablas desde pgAdmin
+- Diferencias y posibilidades con npx prisma db pull y npx prisma db push (para no usar opciones con migrate)
+
+### Added
+
+- Controller para taxis y trajectories.
+- Especificamente para taxis se agreg+o el primer endpoint, con su función listaTaxis (con paginación).
+- Routes de taxis y trajectories.
+
+
+### Changed
+
+- Se modidicó la iniciación de la app
+
+### Fixed
+
+- N/A
+
+### Removed
+
+- N/A
+
+## <1.0.0> - <2024-04-24>
+
+### Sprint learnings
+- Configurar el inicio de una aplicación NodeJS con Express y TypeScript. Entender la necesidad del compilado
 - Conectar una base de datos con Vercel Postgres
-- Cargar base de datos y crear tablas con Prisma y visualización en pgAdmin
-- Editar y exportar el archivo YAML en editor online de swagger como documentación de la API
+- Cargar base de datos y crear tablas con pgAdmin y con conexión a través de Prisma
 
 ### Added
 
