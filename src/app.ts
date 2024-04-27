@@ -1,20 +1,27 @@
 // Aquí está la lógica de la aplicación. Contiene el código de Express.js que configura el servidor y define las rutas y controladores
 // Este archivo se compilará: el otro archivo será el resultado compilado de esta lógica en JavaScript, que es lo que realmente ejecuta Node.js. Es una práctica común mantener separados los archivos fuente (TypeScript) y los archivos compilados (JavaScript) en proyectos de TypeScript
 import express, { Application, Request, Response } from 'express'; // import. express con interfaces tipados
+import router from './routes/taxis';
+import trajectoriesRouter from './routes/trajectories';
 
 const app: Application = express(); // define app express
 
+app.use(router);
+app.use(trajectoriesRouter);
+
+app.use(express.json());
+
 const PORT: number = 3001;
 // app.use() es un método utilizado para montar middleware en la aplicación.
-app.use('/', (req: Request, res: Response): void => { // en ruta raiz se manejan solicitudes / void: indica que la función no devuelve ningún valor. 
-    res.send('Hello world!');
-});
+// app.use('/', (req: Request, res: Response): void => { // en ruta raiz se manejan solicitudes / void: indica que la función no devuelve ningún valor. 
+//     res.send('Hello world!');
+// });
 
 app.listen(PORT, (): void => { // se inicia servidor en el puerto y escuchar las conexiones en un puerto
     console.log('SERVER IS UP ON PORT:', PORT);
 });
 
-
+export default app;
 
 
 
