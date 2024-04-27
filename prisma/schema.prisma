@@ -7,19 +7,17 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Taxis {
-  id Int @id @default(autoincrement())         
-  plate String @db.VarChar(200)
+model taxis {
+  id           Int            @id(map: "Taxis_pkey")
+  plate        String         @db.VarChar
+  trajectories trajectories[]
 }
 
-model Trajectories {
-  id Int @id
-  taxi_id Int 
-  date DateTime
-  latitude Float // Campo de tipo Double
+model trajectories {
+  id        Int      @id @default(autoincrement())
+  taxi_id   Int
+  date      DateTime @db.Timestamp(6)
+  latitude  Float
   longitude Float
+  taxis     taxis    @relation(fields: [taxi_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "relation")
 }
-
-// npx prisma generate  
-// npx prisma migrate dev
-// npx prisma migrate dev --name "name"
