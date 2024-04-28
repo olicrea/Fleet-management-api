@@ -9,12 +9,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.listaTaxis = void 0;
+exports.listTaxis = void 0;
 const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
 console.log('PrismaClient initialized successfully');
 // https://www.prisma.io/docs/orm/prisma-client/queries/crud
-const listaTaxis = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
+const listTaxis = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         let ultimoId = Number(req.query.ultimoId); // Pasar el último ID como un parámetro de consulta
         if (!(ultimoId)) {
@@ -40,6 +40,6 @@ const listaTaxis = (req, resp) => __awaiter(void 0, void 0, void 0, function* ()
         yield prisma.$disconnect();
     }
 });
-exports.listaTaxis = listaTaxis;
+exports.listTaxis = listTaxis;
 // npx prisma db pull
 // npx prisma generate 
