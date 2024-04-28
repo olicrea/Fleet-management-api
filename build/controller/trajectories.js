@@ -9,37 +9,37 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.listTaxis = void 0;
+exports.historialTaxi = void 0;
 const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
-console.log('PrismaClient initialized successfully');
-// https://www.prisma.io/docs/orm/prisma-client/queries/crud
-const listTaxis = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
+const historialTaxi = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        let ultimoId = Number(req.query.ultimoId); // Pasar el último ID como un parámetro de consulta
-        if (!(ultimoId)) {
-            ultimoId = 7249; // Establecer un valor predeterminado de 7249 si ultimoId no está presente
-        }
-        console.log('ultimoId:', ultimoId);
-        const taxis = yield prisma.taxis.findMany({
-            take: 10,
-            cursor: {
-                id: ultimoId,
+        const id = Number(req.params.id);
+        const date = req.params.date;
+        const historialTrajectories = yield prisma.trajectories.findMany({
+            where: {
+                taxi_id: id,
+                date: { gte: date },
             },
             orderBy: {
-                id: 'asc',
+                date: 'asc',
             },
+            select: {
+                latitude: true,
+                longitude: true,
+                date: true,
+            },
+            take: 10,
+            skip: 20,
         });
-        resp.status(200).json(taxis);
+        resp.status(200).json(historialTrajectories);
     }
     catch (error) {
-        return resp.status(500).send("Error getting taxis");
+        return resp.status(500).send("Error getting taxi's locations");
     }
     finally {
         // Desconexión de Prisma
         yield prisma.$disconnect();
     }
 });
-exports.listTaxis = listTaxis;
-// npx prisma db pull
-// npx prisma generate 
+exports.historialTaxi = historialTaxi;
