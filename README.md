@@ -886,7 +886,7 @@ las [funcionalides opcionales](./docs/extension.md)
 | **Para todas las historias** |
 | [x] | Dispositivos GPS en taxis <br>(coordenadas geográficas) | Archivos SQL |
 | [x] | Vercel PostgreSQL | Campo para base de datos en la nube |
-| [x] | PRISMA + PGADMIN | Se crean tablas y se cargan datos: <br> - Tabla de taxis con data de taxis y trayectorias <br> - Tabla de trayectorias |
+| [x] | PRISMA + PGADMIN | Se crean tablas y se cargan datos: <br> - Tabla de taxis <br> - Tabla de trayectorias |
 | [x] | Programación base de API REST | - Express <br> - TypeScript <br> |
 | **Para cada historia** |
 | [ ] | Programación de Consultas SQL | Prisma: como ORM para consultas a la db con métodos para operaciones CRUD, no comandos SQL directamente <br>(con paginación)|
@@ -896,8 +896,8 @@ las [funcionalides opcionales](./docs/extension.md)
 ### Checklist backlog
 | | **Endpoints** | **Requisitos** | 
 |-------|-------|-----------|
-| [ ] |Endpoint 1| Id y placa para cada taxi|
-| [ ] |Endpoint 2| Ubicaciones de un taxi por ID y fecha |
+| [ x ] |Endpoint 1| Id y placa para cada taxi|
+| [ x ] |Endpoint 2| Ubicaciones de un taxi por ID y fecha |
 | [ ] |Endpoint 3| Última ubicación reportada por cada taxi |
 
 ### Entendimiento de conceptos y requerimientos necesarios
@@ -913,6 +913,8 @@ las [funcionalides opcionales](./docs/extension.md)
 - **Prisma** es un ORM (Object-Relational Mapping) que permite interactuar con la base de datos utilizando un modelo de datos de alto nivel en lugar de escribir consultas SQL directamente. En lugar de trabajar con comandos SQL, los desarrolladores pueden definir modelos de datos en código utilizando Prisma, lo que simplifica y abstrae la interacción con la base de datos. Por ejemplo, en lugar de escribir una consulta SQL para seleccionar todos los registros de una tabla, se puede utilizar el método de consulta de Prisma para lograr lo mismo de manera más abstracta y legible en código.
   
 - El tipo de **datos "SERIAL" en PostgreSQL** es una forma de definir un campo numérico que se incrementa automáticamente con cada inserción de fila en la tabla. Cuando se inserta una nueva fila en la tabla, el valor del campo "id" se asigna automáticamente y se incrementa en uno respecto al valor de la fila anterior. Esto es útil porque evita la necesidad de que el usuario especifique manualmente el valor del "id" al insertar nuevas filas en la tabla "trajectories". Simplifica el proceso de inserción de datos y garantiza que cada fila tenga un identificador único y consecutivo.
+
+- **La lave foránea en PostgreSQL** es un paso esencial para mantener la integridad referencial entre tablas.
 
 ### Recursos esenciales para el proyecto
 
