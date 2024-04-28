@@ -3,6 +3,6 @@ import { historialTaxi } from '../controller/trajectories';
 
 const trajectoriesRouter = Router();
 
-trajectoriesRouter.get('/trajectories', historialTaxi);
+trajectoriesRouter.get('/trajectories/:id/:day', historialTaxi);
 
 export default trajectoriesRouter;
