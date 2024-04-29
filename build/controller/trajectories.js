@@ -9,13 +9,15 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.historialTaxi = void 0;
+exports.lastLocation = exports.historialTaxi = void 0;
 const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
+// https://www.prisma.io/docs/orm/prisma-client/queries/crud#read
 const historialTaxi = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         // id y date del req se convierten a los tipos correctos
         const id = Number(req.params.id);
+        // Sobre objeto Date: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
         const day = new Date(req.params.day); // sumar n día para usar con lte: menor que 
         console.log('id:', id);
         console.log('day:', day);
@@ -49,3 +51,33 @@ const historialTaxi = (req, resp) => __awaiter(void 0, void 0, void 0, function*
     }
 });
 exports.historialTaxi = historialTaxi;
+const lastLocation = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
+    try {
+        const locations = yield prisma.trajectories.findMany({
+            orderBy: {
+                date: 'desc',
+            },
+            select: {
+                taxis: {
+                    select: {
+                        plate: true,
+                    }
+                },
+                taxi_id: true,
+                latitude: true,
+                longitude: true,
+                date: true,
+            },
+            distinct: ['taxi_id'],
+        });
+        resp.status(200).json(locations);
+    }
+    catch (error) {
+        console.error(error);
+        return resp.status(500).send("Error getting taxies's last locations");
+    }
+    finally {
+        yield prisma.$disconnect();
+    }
+});
+exports.lastLocation = lastLocation;
