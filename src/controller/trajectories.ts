@@ -2,11 +2,12 @@ import { PrismaClient } from '@prisma/client'
 import express, { Request, Response } from 'express';
 
 const prisma = new PrismaClient();
-
+// https://www.prisma.io/docs/orm/prisma-client/queries/crud#read
 export const historialTaxi = async (req: Request, resp: Response) => {
   try {
     // id y date del req se convierten a los tipos correctos
     const id = Number(req.params.id);
+    // Sobre objeto Date: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
     const day = new Date(req.params.day); // sumar n día para usar con lte: menor que 
     console.log('id:', id);
     console.log('day:', day)
@@ -38,3 +39,35 @@ export const historialTaxi = async (req: Request, resp: Response) => {
     // Desconexión de Prisma
     await prisma.$disconnect();
 }};
+
+export const lastLocation = async (req: Request, resp: Response) => {
+  try {
+    const locations = await prisma.trajectories.findMany({
+      orderBy: {
+        date: 'desc',
+      },
+      select: {
+        taxis: {
+          select: {
+            plate: true,
+          }
+        },
+        taxi_id: true,
+        latitude: true,
+        longitude: true,
+        date: true,
+      },
+      distinct: ['taxi_id'],
+    });
+
+    resp.status(200).json(locations);
+  } catch (error) {
+    console.error(error);
+    return resp.status(500).send("Error getting taxies's last locations");
+  } finally {
+    await prisma.$disconnect();
+  }
+
+
+
+}
