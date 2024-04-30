@@ -3,7 +3,7 @@
 ### Sprint learnings
 - Sobre métodos, paginación y filtros en prisma
 - La importancia de prisma client para hacer las consultas a la base de datos
-- Estuve más consciente de cuando usar query y params y de su importancia con postman
+- Sobre cuando usar query y params y de su importancia al hacer solicitudes, ej: en postman
 - Establecer relación entre tablas desde pgAdmin
 - Diferencias y posibilidades con npx prisma db pull y npx prisma db push (para no usar opciones con migrate)
 - El flujo entre npx tsc, npm start y postman
@@ -11,21 +11,18 @@
 ### Added
 - Esquemas relacionados e importados de pgAdmin
 - Controller para taxis y trajectories, compilados como js
-- Para taxis se agregó el 1er endpoint, con su función listaTaxis (Cursor pagination)
+- Para taxis se agregó el 1er endpoint, con su función listaTaxis (cursor pagination)
 - Para trajectories se agregó el 2do endpoint, con su función histrialTaxi (offset pagination)
+- Para trajectories se agregó el 3er endpoint, con su función lastLocation (offset pagination)
 - Routes de taxis y trajectories, compilados como js
 
-
 ### Changed
-
 - Se modidicó la iniciación de la app
 
 ### Fixed
-
 - N/A
 
 ### Removed
-
 - N/A
 
 ## <1.0.0> - <2024-04-24>

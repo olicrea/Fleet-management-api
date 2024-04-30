@@ -884,12 +884,12 @@ las [funcionalides opcionales](./docs/extension.md)
 | | **Etapa** | **Resultado** |
 |-------|-------|-----------|
 | **Para todas las historias** |
-| [x] | Dispositivos GPS en taxis <br>(coordenadas geográficas) | Archivos SQL |
-| [x] | Vercel PostgreSQL | Campo para base de datos en la nube |
-| [x] | PRISMA + PGADMIN | Se crean tablas y se cargan datos: <br> - Tabla de taxis <br> - Tabla de trayectorias |
-| [x] | Programación base de API REST | - Express <br> - TypeScript <br> |
+| [ x ] | Dispositivos GPS en taxis <br>(coordenadas geográficas) | Archivos SQL |
+| [ x ] | Vercel PostgreSQL | Campo para base de datos en la nube |
+| [ x ] | PRISMA + PGADMIN | Se crean tablas y se cargan datos: <br> - Tabla de taxis <br> - Tabla de trayectorias |
+| [ x ] | Programación base de API REST | - Express <br> - TypeScript <br> |
 | **Para cada historia** |
-| [ ] | Programación de Consultas SQL | Prisma: como ORM para consultas a la db con métodos para operaciones CRUD, no comandos SQL directamente <br>(con paginación)|
+| [ x ] | Programación de Consultas SQL | Prisma: como ORM para consultas a la db con métodos para operaciones CRUD, no comandos SQL directamente <br>(con paginación)|
 | [ ] | Tests | Superagent: como framework de pruebas e2e <br> - ts-jest: para pruebas unitarias |
 | [ ] | Documentación en Swagger | Cada endpoint: <br> - Método HTTP <br> - URL <br> - Parámetros <br> - Encabezados <br> - Códigos HTTP de respuesta <br> - Cuerpo |
 
@@ -898,7 +898,7 @@ las [funcionalides opcionales](./docs/extension.md)
 |-------|-------|-----------|
 | [ x ] |Endpoint 1| Id y placa para cada taxi|
 | [ x ] |Endpoint 2| Ubicaciones de un taxi por ID y fecha |
-| [ ] |Endpoint 3| Última ubicación reportada por cada taxi |
+| [ x ] |Endpoint 3| Última ubicación reportada por cada taxi |
 
 ### Entendimiento de conceptos y requerimientos necesarios
 
@@ -933,3 +933,5 @@ las [funcionalides opcionales](./docs/extension.md)
 - [ x ] [API CRUD REST con Node.js, Express y PostgreSQL.](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/)
 
 - [ x ] [Documentación de Prisma sobre models.](https://www.prisma.io/docs/orm/prisma-schema/data-model/models)
+
+- [ x ] [Documentación de prisma sobre paginación.](https://www.prisma.io/docs/orm/prisma-client/queries/pagination#offset-pagination)
