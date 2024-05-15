@@ -1,23 +1,10 @@
 "use strict";
-/*import { PrismaClient } from "@prisma/client";
-
-const prisma = new PrismaClient();
-
-async function main() {
- const taxi = await prisma.taxis.create({
-   data: {
-     plate: "Prueba",
-   },
- });
- console.log(taxi);
-}
-
-main()
- .then(async () => {
-   await prisma.$disconnect();
- })
- .catch(async (e) => {
-   console.error(e);
-   await prisma.$disconnect();
-   process.exit(1);
- });*/
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const app_1 = __importDefault(require("./app"));
+const PORT = 3001;
+app_1.default.listen(PORT, () => {
+    console.log('SERVER IS UP ON PORT:', PORT);
+});
