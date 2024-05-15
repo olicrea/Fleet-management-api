@@ -1,22 +1,7 @@
-/*import { PrismaClient } from "@prisma/client";
+import app from './app';
 
-const prisma = new PrismaClient();
+const PORT: number = 3001;
 
-async function main() {
- const taxi = await prisma.taxis.create({
-   data: {
-     plate: "Prueba",
-   },
- });
- console.log(taxi);
-}
-
-main()
- .then(async () => {
-   await prisma.$disconnect();
- })
- .catch(async (e) => {
-   console.error(e);
-   await prisma.$disconnect();
-   process.exit(1);
- });*/
+app.listen(PORT, (): void => { // se inicia servidor en el puerto y escuchar las conexiones en un puerto
+    console.log('SERVER IS UP ON PORT:', PORT);
+});
