@@ -14,35 +14,21 @@ const client_1 = require("@prisma/client");
 const prisma = new client_1.PrismaClient();
 console.log('PrismaClient initialized successfully');
 // https://www.prisma.io/docs/orm/prisma-client/queries/crud
-let lastPersistentId;
-// "persistente" significa que el último ID consultado se almacena y conserva en la memoria de la aplicación
 const listTaxis = (req, resp) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        if (!lastPersistentId) {
-            // Buscar el primer taxi en orden ascendente en la base de datos ya que podría no haber id 0 o 1
-            const firstTaxi = yield prisma.taxis.findFirst({
-                orderBy: {
-                    id: 'asc',
-                },
-            });
-            // Si no se encuentra ningún taxi, devuelve un mensaje indicando que no hay taxis en la base de datos
-            if (!firstTaxi) {
-                return resp.status(404).send("No taxis found in the database.");
-            }
-            lastPersistentId = firstTaxi.id;
-        }
-        console.log('lastPersistentId:', lastPersistentId);
+        const take = req.query.take ? parseInt(req.query.take) : 10;
+        const skip = req.query.skip ? parseInt(req.query.skip) : 0;
         const taxis = yield prisma.taxis.findMany({
-            take: 10,
-            skip: 1,
-            cursor: { id: lastPersistentId },
+            take,
+            skip,
+            select: {
+                id: true,
+                plate: true,
+            },
             orderBy: {
                 id: 'asc',
             },
         });
-        if (taxis.length > 0) {
-            lastPersistentId = taxis[taxis.length - 1].id;
-        }
         resp.status(200).json(taxis);
     }
     catch (error) {
@@ -51,5 +37,3 @@ const listTaxis = (req, resp) => __awaiter(void 0, void 0, void 0, function* () 
     }
 });
 exports.listTaxis = listTaxis;
-// npx prisma db pull
-// npx prisma generate 
