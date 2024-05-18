@@ -37,3 +37,5 @@ const listTaxis = (req, resp) => __awaiter(void 0, void 0, void 0, function* () 
     }
 });
 exports.listTaxis = listTaxis;
+// npx prisma db pull
+// npx prisma generate 

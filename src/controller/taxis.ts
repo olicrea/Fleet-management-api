@@ -8,8 +8,8 @@ console.log('PrismaClient initialized successfully');
 export const listTaxis = async (req: Request, resp: Response) => {
   try {
 
-    const take = req.query.take ? parseInt(req.query.take as string) : 10;
-    const skip = req.query.skip ? parseInt(req.query.skip as string) : 0;
+    const take: number = req.query.take ? parseInt(req.query.take as string) : 10;
+    const skip: number = req.query.skip ? parseInt(req.query.skip as string) : 0;
 
     const taxis = await prisma.taxis.findMany({
       take,
