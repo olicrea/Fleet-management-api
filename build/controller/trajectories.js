@@ -19,8 +19,6 @@ const historialTaxi = (req, resp) => __awaiter(void 0, void 0, void 0, function*
         const id = Number(req.params.id);
         // Sobre objeto Date: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
         const day = new Date(req.params.day); // sumar n día para usar con lte: menor que 
-        console.log('id:', id);
-        console.log('day:', day);
         const historial = yield prisma.trajectories.findMany({
             where: {
                 taxi_id: id,
@@ -42,7 +40,6 @@ const historialTaxi = (req, resp) => __awaiter(void 0, void 0, void 0, function*
         resp.status(200).json(historial);
     }
     catch (error) {
-        console.error(error);
         return resp.status(500).send("Error getting taxi's locations");
     }
 });
@@ -72,7 +69,6 @@ const lastLocation = (req, resp) => __awaiter(void 0, void 0, void 0, function* 
         resp.status(200).json(locations);
     }
     catch (error) {
-        console.error(error);
         return resp.status(500).send("Error getting taxies's last locations");
     }
 });

@@ -9,8 +9,6 @@ export const historialTaxi = async (req: Request, resp: Response) => {
     const id = Number(req.params.id);
     // Sobre objeto Date: https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
     const day = new Date(req.params.day); // sumar n día para usar con lte: menor que 
-    console.log('id:', id);
-    console.log('day:', day)
 
     const historial = await prisma.trajectories.findMany({
       where: {
@@ -33,7 +31,6 @@ export const historialTaxi = async (req: Request, resp: Response) => {
 
     resp.status(200).json(historial);
   } catch (error) {
-    console.error(error);
     return resp.status(500).send("Error getting taxi's locations");
   } 
 };
@@ -62,7 +59,6 @@ export const lastLocation = async (req: Request, resp: Response) => {
 
     resp.status(200).json(locations);
   } catch (error) {
-    console.error(error);
     return resp.status(500).send("Error getting taxies's last locations");
   } 
 }
