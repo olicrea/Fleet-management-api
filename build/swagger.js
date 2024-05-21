@@ -15,7 +15,7 @@ const swaggerDefinition = {
     ],
     components: {
         schemas: {
-            Taxi: {
+            Taxis: {
                 type: 'object',
                 properties: {
                     id: { type: 'integer' },
@@ -25,7 +25,7 @@ const swaggerDefinition = {
                     },
                 },
             },
-            Trajectory: {
+            Trajectories: {
                 type: 'object',
                 properties: {
                     id: { type: 'integer' },
