@@ -57,531 +57,16 @@ API REST.
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
-### Java
-
-- [ ] **Modificadores de acesso (public, private, protected)**
-
-- [ ] **Variables**
-
-- [ ] **Uso de condicionales**
-
-- [ ] **Uso de bucles (Loops)**
-
-#### Tipos de data
-
-- [ ] **Primitivos**
-
-- [ ] **Datos primitivos vs no primitivos**
-
-- [ ] **Cadenas**
-
-- [ ] **Arreglos**
-
-#### Colecciones
-
-- [ ] **ArrayList**
-
-- [ ] **HashMap**
-
-- [ ] **HashSet**
-
-#### Testing
-
-- [ ] **JUnit**
-
-- [ ] **Mockito**
-
-#### Spring Framework
-
-- [ ] **Initializr**
-
-  <details><summary>Links</summary><p>
-
-  * [Spring Initializr](https://start.spring.io/)
-</p></details>
-
-- [ ] **Spring Boot**
-
-  <details><summary>Links</summary><p>
-
-  * [Spring Boot Reference Documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/)
-</p></details>
-
-- [ ] **Controladores**
-
-- [ ] **Servicios**
-
-- [ ] **Spring Data JPA**
-
-  <details><summary>Links</summary><p>
-
-  * [Spring Data JPA - Reference Documentation](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/)
-</p></details>
-
-- [ ] **Entidad**
-
-- [ ] **Repositorio**
-
-##### Conceptos Core _(Spring Framework)_
-
-- [ ] **Beans**
-
-- [ ] **Inversión de Control**
-
-- [ ] **Anotaciones**
-
-##### Spring Web _(Spring Framework)_
-
-- [ ] **RestController**
-
-- [ ] **RequestMapping**
-
-- [ ] **RequestParam**
-
-##### Testing _(Spring Framework)_
-
-- [ ] **Spring Test**
-
-- [ ] **Hamcrest**
-
-#### Hibernate ORM
-
-- [ ] **Configuración**
-
-- [ ] **Esquema**
-
-- [ ] **Entidad**
-
-- [ ] **Tabla**
-
-- [ ] **Columna**
-
-- [ ] **Identificadores**
-
-- [ ] **Asociaciones**
-
-- [ ] **Colecciones**
-
-- [ ] **Persistencia**
-
-- [ ] **Consultas**
-
-### Python
-
-- [ ] **Variables (declaración, asignación, ámbito)**
-
-  <details><summary>Links</summary><p>
-
-  * [Variables in Python – Real Python (en inglés)](https://realpython.com/python-variables/)
-  * [Variables in Python - GeeksforGeeks (en inglés)](https://www.geeksforgeeks.org/python-variables/)
-</p></details>
-
-- [ ] **Uso de condicionales (if, elif, ternario)**
-
-  <details><summary>Links</summary><p>
-
-  * [Conditional Statements in Python – Real Python (en inglés)](https://realpython.com/python-conditional-statements/)
-</p></details>
-
-- [ ] **Operadores (identidad, aritméticos, comparación etc)**
-
-  <details><summary>Links</summary><p>
-
-  * [Python Operators - GeeksforGeeks (en inglés)](https://www.geeksforgeeks.org/python-operators/)
-</p></details>
-
-- [ ] **Docstrings (y su diferencia de comentarios)**
-
-  <details><summary>Links</summary><p>
-
-  * [Docstrings - Python Docs (en inglés)](https://docs.python.org/3/tutorial/controlflow.html#documentation-strings)
-</p></details>
-
-- [ ] **Linting (pylint)**
-
-  <details><summary>Links</summary><p>
-
-  * [Pylint - Documentación oficial](https://pylint.pycqa.org/en/latest/)
-  * [Linting Python in Visual Studio Code - Visual Studio Code Docs (en inglés)](https://code.visualstudio.com/docs/python/linting)
-</p></details>
-
-- [ ] **Serialización (y deserialización)**
-
-  <details><summary>Links</summary><p>
-
-  * [Serialize Your Data With Python – Real Python (en inglés)](https://realpython.com/python-serialize-data/)
-</p></details>
-
-#### Tipos de datos
-
-- [ ] **Tipos de datos primitivos (int, float, str, bool)**
-
-  <details><summary>Links</summary><p>
-
-  * [Data Types - Python Docs (en inglés)](https://docs.python.org/3/library/datatypes.html)
-  * [Data types in Python (en inglés)](https://www.educative.io/answers/data-types-in-python)
-</p></details>
-
-- [ ] **Listas (arrays)**
-
-  <details><summary>Links</summary><p>
-
-  * [Lists - Python Docs (en inglés)](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
-  * [Lists and Tuples in Python - Real Python (en inglés)](https://realpython.com/python-lists-tuples/)
-</p></details>
-
-- [ ] **Tuples**
-
-  <details><summary>Links</summary><p>
-
-  * [Tuples - Python Docs (en inglés)](https://docs.python.org/3/tutorial/datastructures.html#tuples-and-sequences)
-  * [Lists and Tuples in Python - Real Python (en inglés)](https://realpython.com/python-lists-tuples/)
-</p></details>
-
-- [ ] **Dictionaries (Dicts)**
-
-  <details><summary>Links</summary><p>
-
-  * [Dictionaries - Python Docs (en inglés)](https://docs.python.org/3/tutorial/datastructures.html#dictionaries)
-  * [Dictionaries in Python - Real Python (en inglés)](https://realpython.com/python-dicts/)
-</p></details>
-
-- [ ] **Sets**
-
-  <details><summary>Links</summary><p>
-
-  * [Sets - Python Docs (en inglés)](https://docs.python.org/3/tutorial/datastructures.html#sets)
-  * [Sets in Python - Real Python (en inglés)](https://realpython.com/python-sets/)
-</p></details>
-
-#### Funciones
-
-- [ ] **Conceptos basicos (params, args, default values, return)**
-
-  <details><summary>Links</summary><p>
-
-  * [Python Functions - GeeksforGeeks (en ingles)](https://www.geeksforgeeks.org/python-functions/)
-</p></details>
-
-- [ ] ***args y **kwargs**
-
-  <details><summary>Links</summary><p>
-
-  * [*args and **kwargs in Python - GeeksforGeeks (en inglés)](https://www.geeksforgeeks.org/args-kwargs-python/)
-</p></details>
-
-- [ ] **Cierres (closures)**
-
-  <details><summary>Links</summary><p>
-
-  * [Closures - Python Docs (en inglés)](https://docs.python.org/3/reference/datamodel.html#emulating-closures-and-nested-scope)
-</p></details>
-
-- [ ] **Funciones lambda**
-
-  <details><summary>Links</summary><p>
-
-  * [Lambda Functions - Python Docs (en inglés)](https://docs.python.org/3/tutorial/controlflow.html#lambda-expressions)
-  * [How to Use Python Lambda Functions – Real Python (en inglés)](https://realpython.com/python-lambda/)
-</p></details>
-
-- [ ] **Decoradores**
-
-  <details><summary>Links</summary><p>
-
-  * [Decorators - Python Docs (en inglés)](https://docs.python.org/3/glossary.html#term-decorator)
-  * [Decorators in Python - Geeks for Geeks (en inglés)](https://www.geeksforgeeks.org/decorators-in-python/)
-</p></details>
-
-#### Iteración
-
-- [ ] **Uso de bucles/ciclos (while, for..in)**
-
-  <details><summary>Links</summary><p>
-
-  * [Loops in Python - For, While and Nested Loops - GeeksforGeeks](https://www.geeksforgeeks.org/loops-in-python/)
-  * [Loops - Learn Python - Free Interactive Python Tutorial](https://www.learnpython.org/en/Loops)
-</p></details>
-
-- [ ] **Comprensión de listas**
-
-  <details><summary>Links</summary><p>
-
-  * [List Comprehension - Python Docs (en inglés)](https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions)
-  * [List Comprehension in Python - GeeksforGeeks (en inglés)](https://www.geeksforgeeks.org/list-comprehensions-in-python/)
-  * [When to Use a List Comprehension in Python – Real Python (en inglés)](https://realpython.com/list-comprehension-python/)
-</p></details>
-
-- [ ] **Técnicas funcionales (map, filter, reduce)**
-
-  <details><summary>Links</summary><p>
-
-  * [Our Guide to Map, Filter, and Reduce Functions in Python - Udacity (en inglés)](https://www.udacity.com/blog/2020/12/our-guide-to-map-filter-and-reduce-functions-in-python.html)
-  * [Map, Filter, Reduce - Learn Python - Free Interactive Python Tutorial (en inglés)](https://www.learnpython.org/en/Map%2C_Filter%2C_Reduce)
-</p></details>
-
-#### Testing en Python
-
-- [ ] **Pruebas unitarias (unit tests, unittest, pytest)**
-
-  <details><summary>Links</summary><p>
-
-  * [unittest - Python Docs (en inglés)](https://docs.python.org/3/library/unittest.html)
-  * [pytest - Documentación oficial](https://docs.pytest.org/en/6.2.x/)
-</p></details>
-
-- [ ] **Uso de mocks (y patch)**
-
-  <details><summary>Links</summary><p>
-
-  * [unittest.mock - Python Docs (en inglés)](https://docs.python.org/3/library/unittest.mock.html)
-  * [Python Mock Library - Real Python (en inglés)](https://realpython.com/python-mock-library/)
-</p></details>
-
-- [ ] **Uso de fixtures**
-
-  <details><summary>Links</summary><p>
-
-  * [pytest fixtures - Documentación oficial](https://docs.pytest.org/en/6.2.x/fixture.html)
-</p></details>
-
-#### Modularización
-
-- [ ] **Módulos**
-
-  <details><summary>Links</summary><p>
-
-  * [Módulos - Python Docs (en inglés)](https://docs.python.org/3/tutorial/modules.html)
-</p></details>
-
-- [ ] **Paquetes**
-
-  <details><summary>Links</summary><p>
-
-  * [Paquetes - Python Docs (en inglés)](https://docs.python.org/3/tutorial/modules.html#packages)
-</p></details>
-
-#### Manejo de dependencias
-
-- [ ] **pip (instalación y uso de paquetes)**
-
-  <details><summary>Links</summary><p>
-
-  * [pip - Python Docs (en inglés)](https://docs.python.org/3/installing/index.html)
-</p></details>
-
-- [ ] **Virtual Environment (ambientes virtuales, virtualenv)**
-
-  <details><summary>Links</summary><p>
-
-  * [venv — Creation of virtual environments — Python 3.12.2 documentation (en inglés)](https://docs.python.org/3/library/venv.html)
-  * [Python Virtual Environments: A Primer – Real Python (en inglés)](https://realpython.com/python-virtual-environments-a-primer/)
-</p></details>
-
-- [ ] **requirements.txt**
-
-  <details><summary>Links</summary><p>
-
-  * [requirements.txt - Documentación oficial](https://pip.pypa.io/en/stable/user_guide/#requirements-files)
-</p></details>
-
-#### Flask
-
-##### Rutas _(Flask)_
-
-- [ ] **Decorador de ruta**
-
-  <details><summary>Links</summary><p>
-
-  * [Routing - Flask Docs (en inglés)](https://flask.palletsprojects.com/en/3.0.x/quickstart/#routing)
-</p></details>
-
-- [ ] **Función de vista**
-
-  <details><summary>Links</summary><p>
-
-  * [View Functions - Flask Docs (en inglés)](https://flask.palletsprojects.com/en/3.0.x/quickstart/#view-functions)
-</p></details>
-
-- [ ] **Reglas de variables (urls dinamica)**
-
-  <details><summary>Links</summary><p>
-
-  * [Variable Rules - Flask Docs (en inglés)](https://flask.palletsprojects.com/en/3.0.x/quickstart/#variable-rules)
-</p></details>
-
-##### Request Object _(Flask)_
-
-- [ ] **Argumentos**
-
-  <details><summary>Links</summary><p>
-
-  * [Request - Flask Docs (en inglés)](https://flask.palletsprojects.com/en/3.0.x/quickstart/#accessing-request-data)
-</p></details>
-
-- [ ] **Headers (cabeceras)**
-
-  <details><summary>Links</summary><p>
-
-  * [Request - Flask Docs (en inglés)](https://flask.palletsprojects.com/en/3.0.x/quickstart/#accessing-request-data)
-</p></details>
-
-##### Response Object _(Flask)_
-
-- [ ] **Partes de la respuesta (status, body, headers)**
-
-  <details><summary>Links</summary><p>
-
-  * [Response - Flask Docs (en inglés)](https://flask.palletsprojects.com/en/3.0.x/quickstart/#about-responses)
-</p></details>
-
-- [ ] **jsonify**
-
-  <details><summary>Links</summary><p>
-
-  * [jsonify - Flask Docs (en inglés)](https://flask.palletsprojects.com/en/3.0.x/api/#flask.json.jsonify)
-</p></details>
-
-##### Testing en Flask _(Flask)_
-
-- [ ] **Configuración de fixtures**
-
-  <details><summary>Links</summary><p>
-
-  * [Testing - Flask Docs (en inglés)](https://flask.palletsprojects.com/en/3.0.x/testing/#fixtures)
-</p></details>
-
-- [ ] **Test Client**
-
-  <details><summary>Links</summary><p>
-
-  * [Testing - Flask Docs (en inglés)](https://flask.palletsprojects.com/en/3.0.x/testing/#sending-requests-with-the-test-client)
-</p></details>
-
-#### Django
-
-- [ ] **Views**
-
-  <details><summary>Links</summary><p>
-
-  * [Base views](https://docs.djangoproject.com/en/5.0/ref/class-based-views/base/)
-</p></details>
-
-- [ ] **Testing**
-
-  <details><summary>Links</summary><p>
-
-  * [Testing in Django](https://docs.djangoproject.com/en/5.0/topics/testing/)
-  * [Testing rest framework](https://www.django-rest-framework.org/api-guide/testing/#testing)
-</p></details>
-
-- [ ] **queryset**
-
-  <details><summary>Links</summary><p>
-
-  * [The queryset argument](https://www.django-rest-framework.org/api-guide/relations/#the-queryset-argument)
-</p></details>
-
-- [ ] **Filter**
-
-  <details><summary>Links</summary><p>
-
-  * [Filtering](https://www.django-rest-framework.org/api-guide/filtering/)
-</p></details>
-
-- [ ] **Order By**
-
-  <details><summary>Links</summary><p>
-
-  * [OrderingFilter](https://www.django-rest-framework.org/api-guide/filtering/#orderingfilter)
-</p></details>
-
-- [ ] **URLs (Path, URLconf, urlpatterns)**
-
-  <details><summary>Links</summary><p>
-
-  * [Django URLs](https://tutorial.djangogirls.org/en/django_urls/)
-  * [URL dispatcher](https://docs.djangoproject.com/en/5.0/topics/http/urls/)
-</p></details>
-
-##### Configuración _(Django)_
-
-- [ ] **Migraciones**
-
-  <details><summary>Links</summary><p>
-
-  * [Migraciones](https://docs.djangoproject.com/es/5.0/topics/migrations/#module-django.db.migrations)
-</p></details>
-
-- [ ] **Setup app**
-
-  <details><summary>Links</summary><p>
-
-  * [Installed apps](https://docs.djangoproject.com/es/5.0/ref/settings/#std-setting-INSTALLED_APPS)
-</p></details>
-
-##### Modelos _(Django)_
-
-- [ ] **Fields**
-
-  <details><summary>Links</summary><p>
-
-  * [Field types](https://docs.djangoproject.com/en/5.0/topics/db/models/#Fields)
-</p></details>
-
-- [ ] **Foreign Key**
-
-  <details><summary>Links</summary><p>
-
-  * [Model field reference](https://docs.djangoproject.com/en/5.0/ref/models/fields/)
-</p></details>
-
-##### Rest Framework _(Django)_
-
-- [ ] **Serializers**
-
-  <details><summary>Links</summary><p>
-
-  * [Serializers](https://www.django-rest-framework.org/community/third-party-packages/#serializers)
-</p></details>
-
-- [ ] **Pagination**
-
-  <details><summary>Links</summary><p>
-
-  * [Pagination](https://www.django-rest-framework.org/api-guide/pagination/#pagination)
-</p></details>
-
-- [ ] **Query params**
-
-  <details><summary>Links</summary><p>
-
-  * [query_params](https://www.django-rest-framework.org/api-guide/requests/#query_params)
-</p></details>
-
-- [ ] **ViewSet**
-
-  <details><summary>Links</summary><p>
-
-  * [ViewSet](https://www.django-rest-framework.org/api-guide/viewsets/#viewset)
-</p></details>
-
-- [ ] **Apiview**
-
-  <details><summary>Links</summary><p>
-
-  * [GenericAPIView](https://www.django-rest-framework.org/api-guide/generic-views/#genericapiview)
-</p></details>
 
 ### Programación Orientada a Objetos (OOP)
 
-- [ ] **Clases**
+- [x] **Clases**
 
 - [ ] **Objetos**
 
 - [ ] **Métodos**
 
-- [ ] **Atributos**
+- [x] **Atributos**
 
 - [ ] **Constructores**
 
@@ -599,21 +84,21 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Node.js
 
-- [ ] **Instalar y usar módulos con npm**
+- [x] **Instalar y usar módulos con npm**
 
   <details><summary>Links</summary><p>
 
   * [Sitio oficial de npm (en inglés)](https://www.npmjs.com/)
 </p></details>
 
-- [ ] **Configuración de package.json**
+- [x] **Configuración de package.json**
 
   <details><summary>Links</summary><p>
 
   * [package.json - Documentación oficial (en inglés)](https://docs.npmjs.com/files/package.json)
 </p></details>
 
-- [ ] **Configuración de npm-scripts**
+- [x] **Configuración de npm-scripts**
 
   <details><summary>Links</summary><p>
 
@@ -666,11 +151,11 @@ Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en t
 
 ### Bases de datos
 
-- [ ] **Modelado de datos**
+- [x] **Modelado de datos**
 
-- [ ] **Conexión**
+- [x] **Conexión**
 
-- [ ] **Índices y limitaciones**
+- [x] **Índices y limitaciones**
 
 ### PostgreSQL
 
@@ -890,8 +375,8 @@ las [funcionalides opcionales](./docs/extension.md)
 | [ x ] | Programación base de API REST | - Express <br> - TypeScript <br> |
 | **Para cada historia** |
 | [ x ] | Programación de Consultas SQL | Prisma: como ORM para consultas a la db con métodos para operaciones CRUD, no comandos SQL directamente <br>(con paginación)|
-| [ ] | Tests | Superagent: como framework de pruebas e2e <br> - ts-jest: para pruebas unitarias |
-| [ ] | Documentación en Swagger | Cada endpoint: <br> - Método HTTP <br> - URL <br> - Parámetros <br> - Encabezados <br> - Códigos HTTP de respuesta <br> - Cuerpo |
+| [ x ] | Tests | Superagent: como framework de pruebas e2e <br> - ts-jest: para pruebas unitarias |
+| [ x ] | Documentación en Swagger | Cada endpoint: <br> - Método HTTP <br> - URL <br> - Parámetros <br> - Encabezados <br> - Códigos HTTP de respuesta <br> - Cuerpo |
 
 ### Checklist backlog
 | | **Endpoints** | **Requisitos** | 
@@ -922,16 +407,18 @@ las [funcionalides opcionales](./docs/extension.md)
 
 - [ x ]  [Configuración para empezar a usar: Vercel Postgres y pgAdmin-lectura.](https://drive.google.com/file/d/1X60AvNWVKUYPd2_e1Wus7Mpldng5AQSU/view)
 
-- [ x ] [Entendiendo el editor online de swagger-video.](https://www.youtube.com/watch?v=SdsaZ-t1QwA)
-
-- [ x ] [Exportar el archivo swagger de la API-lectura.](https://apidog.com/blog/how-to-export-swagger-api-document/)
+- [ x ] [Relacionar tablas en pgAdmin](https://www.youtube.com/watch?v=1sVEcZlgr9Q)
 
 - [ x ] [Empezar a usar Prisma-video.](https://youtu.be/N5dkg28jRF0?si=6tof1h-CmhTf9Ey5)
 
 - [ x ] [Empezar a usar Prisma-lectura.](https://blog.logrocket.com/prisma-orm-adoption-guide/)
 
-- [ x ] [API CRUD REST con Node.js, Express y PostgreSQL.](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/)
-
 - [ x ] [Documentación de Prisma sobre models.](https://www.prisma.io/docs/orm/prisma-schema/data-model/models)
 
 - [ x ] [Documentación de prisma sobre paginación.](https://www.prisma.io/docs/orm/prisma-client/queries/pagination#offset-pagination)
+
+- [ x ] [API CRUD REST con Node.js, Express y PostgreSQL.](https://blog.logrocket.com/crud-rest-api-node-js-express-postgresql/)
+
+- [ x ] [Documentar API con Swagger & Node js & Express](https://www.youtube.com/watch?v=rIWGcxnVIA8)
+
+- [ x ] [Entendiendo el editor online de swagger-video.](https://www.youtube.com/watch?v=SdsaZ-t1QwA)
