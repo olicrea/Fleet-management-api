@@ -1,3 +1,44 @@
+## <1.3.0> - <2024-05-20>
+
+### Sprint learnings
+- Testing con superagent
+- Documentación de endpoints
+
+### Added
+- Archivos de testeo e2e.spec.ts
+- Documentación @openapi
+
+### Changed
+- N/A
+
+### Fixed
+- N/A
+
+### Removed
+- N/A
+
+
+## <1.2.0> - <2024-05-15>
+
+### Sprint learnings
+- Paginación, datos persistentes y su vínculo con las apirest
+- Implementación de documentación en swagger
+- Testeo desde 0
+
+### Added
+- Configuraciones y carpeta de testeo
+- Configuración e implementación de swagger
+
+### Changed
+- Se modidicó la paginación para que ningún endpoint tuviera persistencia
+- Se separa en módulos app.ts e index.ts
+
+### Fixed
+- N/A
+
+### Removed
+- N/A
+
 ## <1.1.0> - <2024-04-30>
 
 ### Sprint learnings
