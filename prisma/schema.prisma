@@ -21,3 +21,6 @@ model trajectories {
   longitude Float
   taxis     taxis    @relation(fields: [taxi_id], references: [id], onDelete: NoAction, onUpdate: NoAction, map: "relation")
 }
+
+// Programación Orientada a Objetos (POO), en la definición de los modelos taxis y trajectories usando Prisma.
+// id, plate, date, latitude, y longitude. Estos atributos y sus relaciones son similares a las propiedades de las clases en POO
