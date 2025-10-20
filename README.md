@@ -4,13 +4,9 @@
 
 * [1. Preámbulo](#1-preámbulo)
 * [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Consideraciones generales](#4-consideraciones-generales)
-* [5. Criterios de aceptación del proyecto](#5-criterios-de-aceptación-del-proyecto)
-* [6. Stack de tecnologías](#6-stack-de-tecnologías)
-* [7. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
-* [8. Funcionalidades opcionales](#8-funcionalidades-opcionales)
-* [9. Comprender para implementar](#9-comprender-para-implementar)
+* [3. Criterios de aceptación del proyecto](#3-criterios-de-aceptación-del-proyecto)
+* [4. Stack de tecnologías](#4-stack-de-tecnologías)
+* [5. Comprender para implementar](#5-comprender-para-implementar)
 
 ***
 
@@ -41,144 +37,18 @@ su solución desde nuestra experiencia, conocimiento y ganas de aprender.
 
 ## 2. Resumen del proyecto
 
-En este proyecto construirás la API REST de un
+En este proyecto se construyó la API REST de un
 [Fleet Management Software](https://en.wikipedia.org/wiki/Fleet_management)
 para consultar las ubicaciones de los vehículos de una empresa
 de taxis en Beijing, China.
 
-Te entregaremos las ubicaciones de casi 10 mil
-taxis. Esperamos que como desarrolladora explores nuevas alternativas y
+Fueron entregadas las ubicaciones de casi 10 mil
+taxis. Como desarrolladora exploré alternativas y
 técnicas para almacenar y consultar esta
-información y puedas garantizar la mejor experiencia de usuaria en tu
-API REST.
-
-## 3. Objetivos de aprendizaje
+información y garantizar la mejor experiencia de usuari@.
 
 
-Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
-
-
-### Programación Orientada a Objetos (OOP)
-
-- [x] **Clases**
-
-- [ ] **Objetos**
-
-- [ ] **Métodos**
-
-- [x] **Atributos**
-
-- [ ] **Constructores**
-
-- [ ] **Encapsulamiento**
-
-- [ ] **Abstracción**
-
-- [ ] **Composición**
-
-- [ ] **Interfaces**
-
-- [ ] **Herencia (super, extends, override)**
-
-- [ ] **Lenguaje de Modelado Unificado (UML, class diagrams)**
-
-### Node.js
-
-- [x] **Instalar y usar módulos con npm**
-
-  <details><summary>Links</summary><p>
-
-  * [Sitio oficial de npm (en inglés)](https://www.npmjs.com/)
-</p></details>
-
-- [x] **Configuración de package.json**
-
-  <details><summary>Links</summary><p>
-
-  * [package.json - Documentación oficial (en inglés)](https://docs.npmjs.com/files/package.json)
-</p></details>
-
-- [x] **Configuración de npm-scripts**
-
-  <details><summary>Links</summary><p>
-
-  * [scripts - Documentación oficial (en inglés)](https://docs.npmjs.com/misc/scripts)
-</p></details>
-
-- [ ] **process (env, argv, stdin-stdout-stderr, exit-code)**
-
-  <details><summary>Links</summary><p>
-
-  * [Process - Documentación oficial (en inglés)](https://nodejs.org/api/process.html)
-</p></details>
-
-- [ ] **File system (fs, path)**
-
-  <details><summary>Links</summary><p>
-
-  * [File system - Documentación oficial (en inglés)](https://nodejs.org/api/fs.html)
-  * [Path - Documentación oficial (en inglés)](https://nodejs.org/api/path.html)
-</p></details>
-
-### SQL
-
-- [ ] **Creación y modificación de tablas**
-
-  <details><summary>Links</summary><p>
-
-  * [SQL CREATE TABLE Statement - w3schools (en inglés)](https://www.w3schools.com/sql/sql_create_table.asp)
-  * [CREATE TABLE Statement - PostgreSQL Docs (en inglés)](https://www.postgresql.org/docs/9.1/sql-createtable.html)
-  * [ALTER TABLE Statement - PostgreSQL Docs (en inglés)](https://www.postgresql.org/docs/9.1/sql-altertable.html)
-</p></details>
-
-- [ ] **Operaciones CRUD (Create-Read-Update-Delete)**
-
-  <details><summary>Links</summary><p>
-
-  * [INSERT](https://www.postgresql.org/docs/9.5/sql-insert.html)
-  * [SELECT](https://www.postgresql.org/docs/9.5/sql-select.html)
-  * [UPDATE](https://www.postgresql.org/docs/9.1/sql-update.html)
-  * [DELETE](https://www.postgresql.org/docs/8.1/sql-delete.html)
-</p></details>
-
-- [ ] **Borrado de tablas o bases de datos enteras con DROP**
-
-  <details><summary>Links</summary><p>
-
-  * [DROP TABLE](https://www.postgresql.org/docs/8.2/sql-droptable.html)
-  * [DROP DATABASE](https://www.postgresql.org/docs/8.2/sql-dropdatabase.html)
-</p></details>
-
-### Bases de datos
-
-- [x] **Modelado de datos**
-
-- [x] **Conexión**
-
-- [x] **Índices y limitaciones**
-
-### PostgreSQL
-
-- [ ] **Tipos de datos**
-
-  <details><summary>Links</summary><p>
-
-  * [Chapter 8. Data Types - Docs (en inglés)](https://www.postgresql.org/docs/14/datatype.html)
-</p></details>
-
-- [ ] **Índices**
-
-  <details><summary>Links</summary><p>
-
-  * [Chapter 11. Indexes - Docs (en inglés)](https://www.postgresql.org/docs/14/indexes.html)
-</p></details>
-
-## 4. Consideraciones generales
-
-* Este proyecto se debe "resolver" en duplas.
-* El rango de tiempo estimado para completar el proyecto es de 4 a 6 Sprints.
-
-## 5. Criterios de aceptación del proyecto
+## 3. Criterios de aceptación del proyecto
 
 Nuestra cliente ha instalado dispositivos GPS en sus taxis.
 Estos dispositivos utilizan señales satelitales para determinar
@@ -311,58 +181,11 @@ menos una compañera.
 
 ***
 
-## 6. Stack de tecnologías
-
-Puedes implementar este proyecto en JavaScript, Python o Java.
+## 4. Stack de tecnologías
 
 * [NodeJs](./docs/stack-node.md)
-* [Java](./docs/stack-java.md)
-* [Python](./docs/stack-python.md)
 
-## 7. Pistas, tips y lecturas complementarias
-
-### Modelamiento de datos
-
-La base de datos recomendada para tu aplicación es PostgreSQL. Te
-recomendamos usar [vercel Postgresql](https://vercel.com/docs/storage/vercel-postgres)
-para que no tengas que instalar PostgreSQL en tu computadora.
-
-Una vez tengas acceso a una instancia de PostgreSQL, deberás crear tablas en
-tu base de datos para almacenar la información entregada. Te recomendamos
-entonces crear dos tablas, una para almacenar la información de taxis y otra
-para almacenar la información de ubicaciones. Deberás definir las columnas
-de cada tabla de acuerdo a la información entregada.
-
-Puedes crear una tabla en PostgreSQL usando
-[SQL](https://www.postgresqltutorial.com/postgresql-create-table/).
-
-### Definir endpoints de API
-
-Deberás definir y documentar los endpoints de tu API.
-Debes usar [Swagger](https://swagger.io/) para esto.
-
-Para una API REST debes definir para cada endpoint entre otras cosas el
-[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
-url, parámetros,
-[encabezados](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
-[códigos HTTP de respuesta](https://shorturl.at/bdegB)
-y
-[cuerpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
-
-Por ejemplo, en la siguiente figura se define un endpoint para consultar la
-información de los taxis en la aplicación. El método del endpoint es _GET_,
-la url es _/taxis_. Recibe un parámetro _query_, retorna la información con
-_código HTTP_ 200 en formato json gracias al _header_
-`Content-type` con valor `application/json`.
-
-![Ejemplo Endpoint API Rest](https://firebasestorage.googleapis.com/v0/b/laboratoria-945ea.appspot.com/o/fleet-management-api-java%2Fexample-endpoint-api-rest.png?alt=media)
-
-## 8. Funcionalidades opcionales
-
-Si completaste todas las funcionalidades del proyecto te invitamos a trabajar en
-las [funcionalides opcionales](./docs/extension.md)
-
-## 9. Comprender para implementar
+## 5. Comprender para implementar
 
 ### Construyendo la arquitectura de la API: FLEET MANAGEMENT SOFTWARE
 
